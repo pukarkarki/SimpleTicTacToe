@@ -154,9 +154,10 @@ def findBestMove(board) :
 	#print()
 	return bestMove
 
-board = [
-	[ 'X', 'O', 'X' ],
-	[ 'O', 'X', 'X' ],
-	[ '_', '_', 'O' ]
-]
-print("The best move is ",findBestMove(board))
+if __name__ == "__main__":
+	board = [
+		[ 'X', 'O', 'X' ],
+		[ 'O', 'X', 'X' ],
+		[ '_', '_', 'O' ]
+		]
+	print("The best move is ",findBestMove(board))
