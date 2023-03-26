@@ -57,7 +57,8 @@ class TicTacToe:
             self.board[row][col] = self.player
             self.buttons[row][col].config(text=self.player)
             self.status_var.set("Player O is thinking")
-            time.sleep(0.1)
+            root.update_idletasks()
+            time.sleep(2)
             bestMove1, count1, bestMove2, count2 = findBestMove(self.board)
             print("The best move is ",bestMove1)
             self.board[bestMove1[0]][bestMove1[1]] = self.opponent
